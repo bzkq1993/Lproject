@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="LiBo" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+		<title>我的好友</title>
+		<link rel="stylesheet" type="text/css" href="CDN/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="CDN/css/myFriends.css"/>
+	</head>
+
+	<body class="slide">
+		<!--我的好友-->
+		<div id="friendPage">
+			<div class="peculiar">
+				
+				<div class="peculiarTop">
+					<img src="CDN/img/xinxin.png"/>
+					<span>特别关心</span>
+				</div>
+				
+				<div class="peculiarContent">
+					<a class="weui-cell weui-cell_access friendSettungs" href="javascript:;">
+						<div class="weui-cell__hd fImg">
+							<img src="CDN/img/pic1.png" alt="">
+						</div>
+						<div class="weui-cell__bd weui-cell_primary">
+							<p class="fName">顾军</p>
+						</div>
+						<span class="weui-cell__ft"></span>
+					</a>
+					<a class="weui-cell weui-cell_access friendSettungs" href="javascript:;">
+						<div class="weui-cell__hd fImg"><img src="CDN/img/picc.png" alt=""></div>
+						<div class="weui-cell__bd weui-cell_primary">
+							<p class="fName">董小姐</p>
+						</div>
+						<span class="weui-cell__ft"></span>
+					</a>
+				</div>
+				
+			</div>
+			
+			<div class="pFriend">
+				
+				<div class="peculiarTop">
+					<span>A</span>
+				</div>
+				
+				<div class="peculiarContent">
+					<a class="weui-cell weui-cell_access friendSettungs">
+						<div class="weui-cell__hd fImg"><img src="CDN/img/piccc.png" alt=""></div>
+						<div class="weui-cell__bd weui-cell_primary">
+							<p class="fName">小草</p>
+						</div>
+						<span class="weui-cell__ft"></span>
+					</a>
+					<a class="weui-cell weui-cell_access friendSettungs">
+						<div class="weui-cell__hd fImg"><img src="CDN/img/ppic.png" alt=""></div>
+						<div class="weui-cell__bd weui-cell_primary">
+							<p class="fName">天天</p>
+						</div>
+						<span class="weui-cell__ft"></span>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		<!--/我的好友-->
+		<!--没有好友时显示-->
+			<div class="noFriend" style="display: none;">
+				<img src="CDN/img/noFriend.png"/>
+				<p>还没有关注好友</p>
+				<p>赶紧去生成邀请卡，分享好友互为关注</p>
+				<p>邀更多好友来一起参加与心情记录和互为关心</p>
+				<!--weui 微信组件 生成邀请卡-->
+				<footer class="page__bd page__bd_spacing" id="windInvitation_box">
+					<a href="javascript:;" class="weui-btn_primary weui-btn weui-btn_default" id="showIOSDialog1">生成邀请卡</a>
+				</footer>
+				<!--pop-->
+				<div id="dialogs">
+					<!--BEGIN dialog1-->
+					<div class="js_dialog" id="iosDialog1" style="display: none;">
+						<div class="weui-mask"></div>
+						<div class="weui-dialog">
+							<div class="weui-dialog__hd"><strong class="weui-dialog__title">邀请卡已发送</strong></div>
+							<div class="weui-dialog__bd">前往公众号查看，分享好友互为关注！</div>
+							<div class="weui-dialog__ft">
+								<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+								<a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">查看</a>
+							</div>
+						</div>
+					</div>
+					<!--END dialog1-->
+				</div>
+				<!--/pop-->
+				<!--/weui 微信组件 生成邀请卡-->
+			</div>
+		<!--/没有好友时显示-->
+		<script src="CDN/js/zepto.min.js"></script>
+		<script src="CDN/js/app.js"></script>
+		<script src="CDN/js/myFriends.js"></script>
+	</body>
+
+</html>

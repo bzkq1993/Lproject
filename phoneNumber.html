@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="LiBo" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="CDN/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="CDN/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="CDN/css/phoneNumber.css"/>
+	</head>
+	<body class="slide">
+		<!--个人信息完善-->
+		<div class="phoneNumber">
+			<form action="">
+				<div class="weui-cells">
+		            <div class="weui-cell weui-cell_select weui-cell_select-before">
+		                <div class="weui-cell__hd">
+		                    <select class="weui-select" name="select2">
+		                        <option value="1">+86</option>
+		                        <option value="2">+80</option>
+		                        <option value="3">+84</option>
+		                        <option value="4">+87</option>
+		                    </select>
+		                </div>
+		                <div class="weui-cell__bd">
+		                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码">
+		                </div>
+		            </div>
+        		</div>
+				
+				<div class="idCode">
+					<input type="" name="" id="idcode" value="" placeholder="验证码" />
+					<div class="gitCode">
+						<a href="javascript:;" class="weui-btn weui-btn_plain-primary weui-btn_plain-disabled" id="gitCode">获取验证码</a>
+					</div>
+					
+				</div>
+				
+			</form>
+			<!--提交-->
+			<div class="sublim">
+				<a href="javascript:;" class="weui-btn weui-btn_disabled weui-btn_primary" id="sublim">确定</a>
+			</div>
+			<!--提交-->
+			<!--错误信息提示-->
+			<div class="weui-toptips weui-toptips_warn js_tooltips" id="error" >错误提示</div>
+			<!--错误信息提示-->
+		</div>
+		<!--/个人信息完善-->
+		
+		<script src="CDN/js/zepto.min.js"></script>
+		<script src="CDN/js/app.js"></script>
+		<script src="CDN/js/weui.min.js"></script>
+		<script src="CDN/js/phoneNumber.js"></script>
+	</body>
+
+</html>

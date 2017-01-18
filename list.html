@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="LiBo" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title>心情指数</title>
+		<link rel="stylesheet" type="text/css" href="CDN/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="CDN/css/list.css" />
+		<link rel="stylesheet" type="text/css" href="CDN/css/recordT.css"/>
+	</head>
+	<style>
+
+	</style>
+
+	<body>
+		<div class="container" style="">
+			<!--moodIndex心情指数-->
+			<!--header-->
+			<header>
+				<div class="keep"></div>
+			</header>
+			<!--/header-->
+			<!--section-->
+			<section>
+				<!--oneself-->
+				<div class="oneself">
+
+					<div class="publicBox">
+						<div class="publicBox-left fl">
+							<img src="CDN/img/picc.png" alt="" />
+							<!--今日有记录显示nameTime隐藏nameTime-noRecord 没记录显示nameTime-noRecord隐藏nameTime-->
+							<div class="nameTime fl" style="">
+								<p class="nickname">陈小刚</p>
+								<span>08:40</span>
+							</div>
+							<!--nameTime-noRecord-->
+							<div class="nameTime-noRecord fl" style="display: none;">
+								<p class="nickname">陈小...</p>
+							</div>
+							<!--nameTime-noRecord-->
+							<!--/今日有记录显示nameTime隐藏nameTime-noRecord 没记录显示nameTime-noRecord隐藏nameTime-->
+						</div>
+
+						<!--今日有记录显示publicBox-right隐藏publicBox-right-noRecord 没记录显示publicBox-right-noRecord隐藏publicBox-right-->
+						<div class="publicBox-right fl" style="">
+							<div class="moodPic">
+								<img src="CDN/img/icon10.png" />
+							</div>
+							<div class="my_care" id="myPraise">
+								<span>0</span>
+								<img src="CDN/img/heartNo.png" />
+							</div>
+						</div>
+
+						<!--今日没记录显示-->
+						<div class="publicBox-right-noRecord fl" style="display: none;">
+							未记录
+						</div>
+						<!--/今日没记录显示-->
+						<!--今日有记录显示nameTime隐藏nameTime-noRecord 没记录显示nameTime-noRecord隐藏nameTime-->
+					</div>
+
+				</div>
+				<!--/oneself-->
+				<!--section-box强关注与好友-->
+				<div class="section-box" style="">
+					<!--strongConcern强关注-->
+					<div class="strongConcern" id="">
+
+						<div class="publicBox">
+							<div class="publicBox-left fl">
+								<img src="CDN/img/ppic.png" alt="" />
+								<div class="nameTime fl">
+									<p class="nickname">谷军</p>
+									<span>10:20</span>
+								</div>
+							</div>
+
+							<div class="publicBox-right fl">
+								<div class="moodPic">
+									<img src="CDN/img/icon9.png" />
+								</div>
+								<div class="praise">
+									<span>8</span>
+									<img src="CDN/img/baobaoNo.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--concern-->
+					<div class="concern" id="">
+						
+						<div class="publicBox">
+							<div class="publicBox-left fl">
+								<img src="CDN/img/piccc.png" alt="" />
+								<div class="nameTime fl">
+									<p class="nickname">小冯</p>
+									<span>09:30</span>
+								</div>
+							</div>
+
+							<div class="publicBox-right fl">
+								<div class="moodPic">
+									<img src="CDN/img/icon8.png" />
+								</div>
+								<div class="praise">
+									<span>88</span>
+									<img src="CDN/img/baobaoNo.png" />
+								</div>
+							</div>
+						</div>
+
+						<div class="publicBox">
+							<div class="publicBox-left fl">
+								<img src="CDN/img/pic1.png" alt="" />
+								<div class="nameTime fl">
+									<p class="nickname">小波</p>
+									<span>18:40</span>
+								</div>
+							</div>
+
+							<div class="publicBox-right fl">
+								<div class="moodPic">
+									<img src="CDN/img/icon7.png" />
+								</div>
+								<div class="praise">
+									<span>8</span>
+									<img src="CDN/img/heartNo.png"  />
+								</div>
+							</div>
+						</div>
+						
+						<div class="publicBox">
+							<div class="publicBox-left fl">
+								<img src="CDN/img/pic1.png" alt="" />
+								<div class="nameTime fl">
+									<p class="nickname">乘风破浪前程广  鼎立创新步步高</p>
+									<span>18:40</span>
+								</div>
+							</div>
+
+							<div class="publicBox-right fl">
+								<div class="moodPic">
+									<img src="CDN/img/icon6.png" />
+								</div>
+								<div class="praise">
+									<span>888</span>
+									<img src="CDN/img/heartNo.png" />
+								</div>
+							</div>
+						</div>
+						
+						<div class="publicBox">
+							<div class="publicBox-left fl">
+								<img src="CDN/img/pic1.png" alt="" />
+								<div class="nameTime fl">
+									<p class="nickname">鼎立创新步步高  乘风破浪前程广</p>
+									<span>18:40</span>
+								</div>
+							</div>
+
+							<div class="publicBox-right fl">
+								<div class="moodPic">
+									<img src="CDN/img/icon6.png" />
+								</div>
+								<div class="praise">
+									<span>888</span>
+									<img src="CDN/img/heartNo.png" />
+								</div>
+							</div>
+						</div>
+						
+						<div class="publicBox">
+							<div class="publicBox-left fl">
+								<img src="CDN/img/pic1.png" alt="" />
+								<div class="nameTime fl">
+									<p class="nickname">鸡年大吉大利</p>
+									<span>18:40</span>
+								</div>
+							</div>
+
+							<div class="publicBox-right fl">
+								<div class="moodPic">
+									<img src="CDN/img/icon6.png" />
+								</div>
+								<div class="praise">
+									<span>888</span>
+									<img src="CDN/img/heartNo.png" />
+								</div>
+							</div>
+						</div>
+						
+						<div class="publicBox">
+							<div class="publicBox-left fl">
+								<img src="CDN/img/pic1.png" alt="" />
+								<div class="nameTime fl">
+									<p class="nickname">lanjiangwangluokeji</p>
+									<span>18:40</span>
+								</div>
+							</div>
+
+							<div class="publicBox-right fl">
+								<div class="moodPic">
+									<img src="CDN/img/icon1.png" />
+								</div>
+								<div class="praise">
+									<span>0</span>
+									<img src="CDN/img/heartNo.png" />
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!--/section-box强关注与好友-->
+				<!--没有好友时显示-->
+				<div class="noRecord" style="display: none;">
+					<p>还没有关注好友</p>
+					<p>赶紧去生成邀请卡，分享好友互为关注</p>
+					<p>邀更多好友来一起参与记录和互为点赞！</p>
+				</div>
+				<!--/今日没有记录心情时显示-->
+			<!--/section-->
+			<!--weui 微信组件 生成邀请卡-->
+			<button class="weui-btn_primary weui-btn weui-btn_default" id="showIOSDialog1">生成邀请卡</button>
+			<!--/weui 微信组件 生成邀请卡-->
+			<!--/moodIndex心情指数-->
+		</div>
+		
+		<!--点击showIOSDialog 生成邀请卡-->
+			<div id="invitationCard" style="display: none;">
+				<div class="bgCard"></div>
+				<div class="windowCard" id="windowCard">
+					<div class="topCard">
+						<p>邀请卡已发送</p>
+						<p>前往公众号查看，分享好友互为关注！</p>
+					</div>
+					<div class="bottomCard">
+						<div class="bCardLeft fl" id="bCardLeft" >取消</div>
+						<div class="bCardRight fr" id="bCardRight" >查看</div>
+					</div>
+				</div>
+				<!--/点击记录判断用户是否输入文本-->
+			</div>
+			<!--点击showIOSDialog 生成邀请卡-->
+		<!--record keyword记录单词页面-->
+		<div id="keep-record" style="width: 100%;height: 100%;display: none;">
+			<!--take-->
+			<div class="take">
+				
+				<div class="icon-box">
+					<div class="icon icon1" id="icon1">
+						<img src="CDN/img/icon1.png" />
+					</div>
+					<div class="icon icon2" id="icon2">
+						<img src="CDN/img/icon2.png" />
+					</div>
+					<div class="icon icon3" id="icon3">
+						<img src="CDN/img/icon3.png" />
+					</div>
+					<div class="icon icon4" id="icon4">
+						<img src="CDN/img/icon4.png" />
+					</div>
+					<div class="icon icon5" id="icon5">
+						<img src="CDN/img/icon5.png" />
+					</div>
+					<div class="icon icon6" id="icon6">
+						<img src="CDN/img/icon6.png" />
+					</div>
+					<div class="icon icon7" id="icon7">
+						<img src="CDN/img/icon7.png" />
+					</div>
+					<div class="icon icon8" id="icon8">
+						<img src="CDN/img/icon8.png" />
+					</div>
+					<div class="icon icon9" id="icon9">
+						<img src="CDN/img/icon9.png" />
+					</div>
+					<div class="icon icon10" id="icon10">
+						<img src="CDN/img/icon10.png" />
+					</div>
+					<span class="bgIcon1"></span>
+					<span class="bgIcon2"></span>
+					<span class="bgIcon3"></span>
+					<span class="bgIcon4"></span>
+				</div>
+
+			</div>
+			<!--/take-->
+		</div>
+		<!--/record keyword记录单词页面-->
+		<!--praise关心我的好友-->
+		<div class="goodFriend slide" style="display: none;">
+			<div class="goodFriendY" style="" >
+				<div class="goodFriengList">
+					<img src="CDN/img/pic1.png"/>
+					<span>陈小刚</span>
+					<span>刚刚</span>
+				</div>
+				<div class="goodFriengList">
+					<img src="CDN/img/pic1.png"/>
+					<span>李波</span>
+					<span>15分钟前</span>
+				</div>
+				<div class="goodFriengList">
+					<img src="CDN/img/pic1.png"/>
+					<span>小冯</span>
+					<span>45分钟前</span>
+				</div>
+				<div class="goodFriengList">
+					<img src="CDN/img/pic1.png"/>
+					<span>谷军</span>
+					<span>12小时前</span>
+				</div>
+			</div>
+			<!--没有好友关注时-->
+			<div class="goodFriendN" style="display: none;">
+				<img src="CDN/img/xin.png"/>
+				<p>还没有好友关心</p>
+				<p>赶紧去生成邀请卡，分享好友互为关注</p>
+				<p>要更多好友来一起参加心情记录和互为关心！</p>
+				
+				<!--weui 微信组件 生成邀请卡-->
+				<!--<button href="javascript:;" class="weui-btn_primary weui-btn weui-btn_default" id="showIOSDialog2">生成邀请卡</button>-->
+			</div>
+			<!--/没有好友关注时-->
+		</div>
+		<!--/praise关心我的好友-->
+
+		<script src="CDN/js/zepto.min.js"></script>
+		<script src="CDN/js/app.js"></script>
+		<script src="CDN/js/list.js"></script>
+		<script src="CDN/js/record.js"></script>
+	</body>
+
+</html>

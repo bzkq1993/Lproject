@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="LiBo" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+		<title>完善资料</title>
+		<link rel="stylesheet" type="text/css" href="CDN/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="CDN/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="CDN/css/perfectinfo.css"/>
+	</head>
+	
+	<body class="slide">
+		<!--个人信息完善-->
+		<div class="myInformation">
+			<form action="">
+				<label for="user_name">姓名</label>
+				<input type="text" class="myInformation_input" id="user_name" name="fname" placeholder="还未填写（如：张三）" />
+
+				<label for="showDatePicker" class="fl">生日</label><span class="fl">小心生日当天送上惊喜哟~</span>
+				<input type="text" class="weui-btn weui-btn_default myInformation_input birthday" readonly="readonly" id="showDatePicker" name="birthday" placeholder="年-月-日" />
+
+				<label for="user_height">身高</label><br />
+				<input type="number" class="myInformation_input fl" id="user_height" name="height" placeholder="还未填写（如：175）" />
+				<div class="myInformation_input_right fl">cm</div>
+
+				<label for="user_weight">体重</label><br />
+				<input type="number" class="myInformation_input fl" id="user_weight" name="weight" placeholder="还未填写（如：70）" />
+				<div class="myInformation_input_right fl">kg</div>
+
+				<label for="user_phone">手机号</label>
+				<input type="text" class="myInformation_input" id="user_phone" readonly="readonly" name="phone" placeholder="还未填写" />
+
+				<label for="user_card">身份证号</label>
+				<input type="number" class="myInformation_input" id="user_card" name="card" placeholder="还未填写" />
+
+				<label for="user_name">所在地区</label><br />
+				<div class="address-box">
+					<div class="country fl" id="">国家</div>
+					<div class="province fl" id="">省份</div>
+					<div class="city fr" id="">市</div>
+					<div class="classify fr" id="">不选</div>
+				</div>
+				<div id="">
+					<input type="text" class="street" name="" id="" placeholder="还未填写（如：创业大街聚光中心C2座501室）" />
+				</div>
+
+				<div class="weui-btn weui-btn_primary" id="submitBtn">提交</div>
+
+				<div class="error" id="error"></div>
+				<div class="success" id="success">
+					<img src="CDN/img/gou.png" />
+					<p>完善资料成功！</p>
+				</div>
+			</form>
+		</div>
+		<!--/个人信息完善-->
+		
+		<script src="CDN/js/zepto.min.js"></script>
+		<script src="CDN/js/weui.min.js"></script>
+		<script src="CDN/js/app.js"></script>
+		<script src="CDN/js/perfectifo.js"></script>
+	</body>
+
+</html>

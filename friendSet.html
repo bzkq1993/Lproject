@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!-- SEO  -->
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="LiBo" />
+		<!-- 苹果专用 -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- 简单移动端适配 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+		<title>好友设置</title>
+		<link rel="stylesheet" type="text/css" href="CDN/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="CDN/css/friendSet.css"/>
+	</head>
+
+	<body class="slide">
+		<!--好友设置页面-->
+		<div id="friendSettungsPage">
+			<div class="weui-cell friendSettungsPage_me">
+                <div class="weui-cell__hd ffImg"><img src="CDN/img/pic1.png" alt=""></div>
+                <div class="weui-cell__bd" id="friendName">
+                    <p>荷塘月色</p>
+                </div>
+            </div>
+            
+            <div class="weui-cells weui-cells_form frist_weui" id="">
+	            <div class="weui-cell weui-cell_switch">
+	                <div class="weui-cell__bd">特别关心</div>
+	                <div class="weui-cell__ft">
+	                    <input class="weui-switch" type="checkbox"/>
+	                </div>
+	            </div>
+	        </div>
+            
+            <div class="weui-cells weui-cells_form" id="">
+	            <div class="weui-cell weui-cell_switch">
+	                <div class="weui-cell__bd">不看TA的心情记录</div>
+	                <div class="weui-cell__ft">
+	                    <input class="weui-switch" type="checkbox" checked="checked" />
+	                </div>
+	            </div>
+	           	<div class="weui-cell weui-cell_switch" id="">
+	                <div class="weui-cell__bd">不让他看我的心情记录</div>
+	                <div class="weui-cell__ft">
+	                    <input class="weui-switch" type="checkbox" />
+	                </div>
+	            </div>
+	        </div>
+	        
+	        <!--取消 关注-->
+			<div class="page__bd page__bd_spacing">
+        		<button href="javascript:;" class="weui-btn weui-btn_plain-default" id="unfollow">取消关注</button>
+       		</div>
+        	<div id="dialogs">
+	        <!--BEGIN dialog1-->
+		        <div class="js_dialog" id="iosDialog1" style="display: none;">
+		            <div class="weui-mask"></div>
+		            <div class="weui-dialog">
+		                <div class="weui-dialog__hd"><strong class="weui-dialog__title">确定要取消关注该好友吗？</strong></div>
+		                <div class="weui-dialog__bd"></div>
+		                <div class="weui-dialog__ft">
+		                    <a href="javascript:;" id="doUnfollow" class="weui-dialog__btn weui-dialog__btn_default" >取消关注</a>
+		                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">返回</a>
+		                </div>
+		            </div>
+		        </div>
+       		 <!--END dialog1-->
+        	</div>
+        <!--取消 关注-->
+            
+		</div>
+		<!--/好友设置页面-->
+		<script src="CDN/js/zepto.min.js"></script>
+		<script src="CDN/js/app.js"></script>
+		<script src="CDN/js/friendSet.js"></script>
+	</body>
+
+</html>
